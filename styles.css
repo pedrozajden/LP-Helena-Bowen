@@ -70,3 +70,39 @@
   .care-section h2{font-size:clamp(32px,8.4vw,38px);line-height:1.16}
   .questions details p{padding-right:4px}
 }
+
+/* Ajustes finos de alinhamento e quebra solicitados. */
+@media(min-width:761px){
+  .hero-lead{font-size:20px;white-space:nowrap}
+  .therapy-copy>p.therapy-subtitle{font-size:18px;white-space:nowrap}
+  .therapy-photo figcaption{justify-content:flex-start;gap:44px}
+  .process-heading{justify-content:flex-start;gap:clamp(42px,5vw,78px)}
+  .duration p{font-size:14px}
+  .duration strong{font-size:16px;font-weight:600}
+}
+@media(min-width:761px) and (max-width:1150px){
+  .hero-lead{font-size:18px;white-space:normal}
+}
+@media(min-width:761px) and (max-width:900px){
+  .process-heading{align-items:flex-start;flex-direction:column;gap:15px}
+}
+@media(max-width:760px){
+  .movement-strip{padding:20px 0}
+  .movement-strip .wrap{width:calc(100% - 20px);padding-right:0;justify-content:center}
+  .movement-strip p{font-size:clamp(16px,4.3vw,18px);line-height:1.3;white-space:nowrap;letter-spacing:-.045em}
+  .movement-strip span:last-child{display:none}
+  .whatsapp-float{right:10px;width:50px;height:50px}
+  .whatsapp-float svg{width:27px;height:27px}
+  .identification.section{padding-block:44px}
+  .identification .section-heading .eyebrow{margin-bottom:12px}
+  .identification .section-heading h2{font-size:clamp(25px,6.8vw,28px);line-height:1.18}
+  .identification .section-heading h2 br{display:none}
+  .identification .section-heading>p:last-child{margin-top:14px;line-height:1.5}
+  .identification .situations{gap:16px;margin-top:24px}
+  .identification .situations article{display:grid;grid-template-columns:33px minmax(0,1fr);column-gap:8px;row-gap:8px;padding-top:13px}
+  .identification .situations .number{grid-row:1/3;margin-top:3px;white-space:nowrap}
+  .identification .situations h3{font-size:17px;line-height:1.35;margin:0}
+  .identification .situations h3 br{display:none}
+  .identification .situations p{grid-column:2}
+  .identification .section-note{margin-top:22px;padding-top:22px}
+}

@@ -22,3 +22,51 @@
 
 @media(min-width:1051px){.steps{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}.steps h3{font-size:18px;line-height:1.35}}
 @media(min-width:761px) and (max-width:1050px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Ajustes pontuais para os textos finais, preservando a composição original. */
+.therapy-copy h2{margin-bottom:12px}
+.therapy-copy>p.therapy-subtitle{margin:0 0 24px;font:500 19px/1.45 var(--heading);color:var(--ink);letter-spacing:-.02em}
+.technique-block{border-top:1px solid #cbbfd3;padding-top:16px;margin-top:17px}
+.technique-block-primary{margin-top:0}
+.technique-block h3{font:700 12px/1.4 var(--body);letter-spacing:.12em;color:var(--purple);margin-bottom:8px}
+.technique-block:not(.technique-block-primary) h3{color:#6f5d7a}
+.technique-block p{font-size:15px;line-height:1.65}
+.therapy-copy>p.therapy-integration{margin-top:20px;font-size:15px;line-height:1.65}
+.therapy-copy .soft-note{margin-top:20px;padding-top:18px}
+.therapy-copy .text-link{margin-top:20px}
+.questions details p{max-width:65ch;line-height:1.65}
+.questions details[open] summary{padding-bottom:14px}
+@media(min-width:761px){
+  .hero h1{font-size:clamp(42px,3.8vw,54px);line-height:1.09;max-width:620px}
+  .hero-lead{max-width:560px}
+  .hero-description{max-width:580px}
+  .therapy-grid{grid-template-columns:.9fr 1.1fr;gap:60px}
+  .therapy-photo img{height:700px}
+  .care-grid{grid-template-columns:1.05fr .95fr;gap:70px}
+  .care-section h2{max-width:570px;font-size:clamp(38px,3.2vw,46px);line-height:1.17}
+}
+@media(min-width:761px) and (max-width:1150px){
+  .therapy-grid{grid-template-columns:1fr;gap:35px}
+  .therapy-photo{width:min(100%,680px);margin-inline:auto}
+  .therapy-photo img{height:490px}
+  .therapy-copy{width:min(100%,720px);margin-inline:auto}
+}
+@media(min-width:761px) and (max-width:1249px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 35px}
+  .steps li:last-child{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .hero h1{font-size:clamp(36px,8vw,44px);line-height:1.1}
+  .hero-lead{margin-top:18px}
+  .identification .situations{grid-template-columns:1fr;gap:24px}
+  .identification .situations h3{font-size:19px}
+  .therapy-copy>p.therapy-subtitle{font-size:18px;margin:0 0 22px}
+  .technique-block p,.therapy-copy>p.therapy-integration{font-size:14px}
+  .steps{grid-template-columns:1fr;gap:18px}
+  .steps li{display:grid;grid-template-columns:39px minmax(0,1fr);column-gap:15px;row-gap:4px;padding-top:18px}
+  .steps li>span{grid-row:1/3}
+  .steps h3{margin:0;font-size:18px}
+  .steps p{grid-column:2;font-size:14px}
+  .care-section h2{font-size:clamp(32px,8.4vw,38px);line-height:1.16}
+  .questions details p{padding-right:4px}
+}

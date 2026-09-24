@@ -2,6 +2,7 @@
 const config = window.SITE_CONFIG;
 const whatsappUrl = `https://wa.me/${config.whatsapp}?text=${encodeURIComponent(config.message)}`;
 document.querySelectorAll('[data-location]').forEach(element => { element.textContent = config.location; });
+document.querySelectorAll('[data-location-faq]').forEach(element => { element.textContent = config.locationFaq; });
 document.querySelectorAll('[data-whatsapp]').forEach(link => {
   link.href = whatsappUrl;
   link.addEventListener('click', () => {

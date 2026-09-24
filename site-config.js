@@ -3,6 +3,7 @@ window.SITE_CONFIG = Object.freeze({
   whatsapp: '5531992211869',
   message: 'Oi, Helena! Vi sua página sobre Terapia Bowen e gostaria de conversar sobre o meu caso.',
   location: 'Santo Agostinho · Belo Horizonte',
+  locationFaq: 'no bairro Santo Agostinho, em Belo Horizonte',
   // Preencher src com /assets/nome.mp4 e captions com /assets/nome.vtt.
   // Incluir transcrição textual em transcript. Manter vazio enquanto o vídeo não estiver disponível.
   videos: {

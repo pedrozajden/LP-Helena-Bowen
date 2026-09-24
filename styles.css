@@ -19,3 +19,6 @@
 
 /* Ajuste final do Hero para caber integralmente em monitores desktop. */
 @media(min-width:761px){.header-inner{height:90px}.hero{align-items:start;padding-block:24px 30px}.hero .eyebrow{margin-bottom:17px}.hero h1{font-size:clamp(42px,4.1vw,58px)}.hero-lead{max-width:520px;margin-top:18px}.hero-description{max-width:560px;margin:14px 0 21px;line-height:1.7}.hero-authority{margin-top:14px;padding-top:13px;max-width:560px}.hero-location{margin-top:11px}.hero-location strong{margin-top:0}.hero-photo>img{height:525px}.photo-signature{padding:16px 21px}.photo-signature strong{font-size:20px}}
+
+@media(min-width:1051px){.steps{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}.steps h3{font-size:18px;line-height:1.35}}
+@media(min-width:761px) and (max-width:1050px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}

@@ -46,7 +46,6 @@ if (tour) {
   const pinMedia = matchMedia('(min-width: 1024px) and (min-height: 680px) and (prefers-reduced-motion: no-preference)');
   const sticky = tour.querySelector('.tour-sticky');
   const rail = tour.querySelector('.tour-rail');
-  const count = tour.querySelector('.tour-count b');
   const steps = [...tour.querySelectorAll('.tour-step')];
   let active = 0;
   let ticking = false;
@@ -56,7 +55,6 @@ if (tour) {
       step.classList.toggle('is-active', i === index);
       step.classList.toggle('is-done', i < index);
     });
-    count.textContent = String(index + 1).padStart(2, '0');
   };
   // A trilha vertical liga o centro do primeiro número ao centro do último.
   const measure = () => {

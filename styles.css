@@ -161,7 +161,7 @@
 .tour-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
 .tour-photo{aspect-ratio:4/5;overflow:hidden;border-radius:6px;background:var(--lilac);margin:0 0 18px}
 .tour-step:first-child .tour-photo{border-top-left-radius:70px}
-.tour-photo img{width:100%;height:100%;object-fit:cover}
+.tour-photo img{width:100%;height:100%;object-fit:cover;border-radius:inherit}
 .tour-number{display:inline-flex;align-items:center;justify-content:center;width:39px;height:39px;border-radius:50%;background:var(--lilac);font-size:12px;color:var(--ink);flex-shrink:0}
 .tour-text h3{margin:16px 0 10px;font-size:18px;line-height:1.35}
 .tour-text p{font-size:14px}
@@ -204,8 +204,12 @@
 .is-pinned .tour-step.is-active .tour-photo{opacity:1}
 .is-pinned .tour-step.is-active .tour-photo img{transform:scale(1)}
 .is-pinned .tour-stage{display:block;position:relative;z-index:2;height:var(--stage-h);pointer-events:none}
-.tour-count{position:absolute;left:22px;bottom:22px;color:#fff;font-size:11px;letter-spacing:.16em;padding:8px 13px;background:#342442a8;border:1px solid #e8bd5466;border-radius:3px}
-.tour-count b{font-weight:700;color:#f0ca6c}
+.tour-photo figcaption{display:none}
+.is-pinned .tour-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#34244200 52%,#342442cc);pointer-events:none}
+.is-pinned .tour-photo figcaption{display:block;position:absolute;left:30px;right:30px;bottom:28px;z-index:1;color:#fff;font:550 clamp(24px,2.1vw,30px)/1.2 var(--heading);letter-spacing:-.035em;opacity:0;transform:translateY(14px);transition:opacity .6s ease .15s,transform .9s cubic-bezier(.2,.7,.2,1) .15s}
+.is-pinned .tour-photo figcaption span{display:flex;align-items:center;gap:10px;margin-bottom:10px;font:700 10px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:#f0ca6c}
+.is-pinned .tour-photo figcaption span:before{content:'';width:22px;height:1px;background:#e8bd54}
+.is-pinned .tour-step.is-active .tour-photo figcaption{opacity:1;transform:none}
 
 /* Animações de entrada. A classe .motion só existe quando o sistema não pede movimento reduzido. */
 @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}

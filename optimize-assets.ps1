@@ -6,7 +6,11 @@ $items = @(
   @('Fotos Helena - Perfil\Fotos Helena (1).jpg', 'helena-retrato.jpg', 1050),
   @('Fotos Helena - Perfil\Fotos Helena (5).jpg', 'helena-consultorio.jpg', 1000),
   @('movimentos-detalhes\Movimentos Bowen (1).jpg', 'bowen-maos.jpg', 1100),
-  @('movimentos-detalhes\Movimentos Bowen (2).jpg', 'bowen-detalhe.jpg', 1100)
+  @('movimentos-detalhes\Movimentos Bowen (2).jpg', 'bowen-detalhe.jpg', 1100),
+  @('novas-fotos\dor 1.png', 'corpo-dor-ombro.jpg', 1536),
+  @('novas-fotos\academia feliz.png', 'vida-academia.jpg', 1000),
+  @('novas-fotos\bike feliz.png', 'vida-bike.jpg', 1000),
+  @('novas-fotos\corrida feliz.png', 'vida-corrida.jpg', 1000)
 )
 $encoder = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object MimeType -eq 'image/jpeg'
 $parameters = New-Object System.Drawing.Imaging.EncoderParameters(1)

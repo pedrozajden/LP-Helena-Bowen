@@ -12,7 +12,7 @@ Landing page estática, em português, com fotos reais, HTML semântico e sem de
 
 - Contato, mensagem do WhatsApp e bairro: `site-config.js`. O HTML contém valores de fallback para visitantes sem JavaScript; sincronize-os se esses dados mudarem.
 - Conteúdo e SEO: `index.html`. Estilos e pontos de quebra: `styles.css`.
-- Imagens: originais preservados nas pastas fornecidas; versões otimizadas em `assets/`. `optimize-assets.ps1` recria as versões web no Windows com System.Drawing, sem dependências.
+- Imagens: originais preservados nas pastas fornecidas (`novas-fotos/` traz as fotos ilustrativas de dor e atividades); versões otimizadas em `assets/`. `optimize-assets.ps1` recria as versões web no Windows com System.Drawing, sem dependências.
 - As fontes DM Sans e Manrope são servidas pelo Google Fonts, com fallback local sans-serif.
 - Depois de definir o domínio definitivo, adicionar canonical e URL absoluta da imagem Open Graph.
 

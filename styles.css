@@ -106,3 +106,51 @@
   .identification .situations p{grid-column:2}
   .identification .section-note{margin-top:22px;padding-top:22px}
 }
+
+/* Fotos: Helena sentada no hero, retrato na seção sobre ela. */
+.hero-photo>img{object-position:62% 50%;transform:scale(1.22);transform-origin:66% 62%}
+.about-visual img{object-position:50% 30%}
+@media(max-width:760px){.hero-photo>img{object-position:62% 50%;transform:scale(1.15);transform-origin:68% 60%}.about-visual img{object-position:50% 25%}}
+
+/* Seção "Seu corpo merece atenção": foto à esquerda ocupando toda a altura do conteúdo. */
+.care-grid{grid-template-areas:'photo heading' 'photo body';grid-template-columns:.9fr 1.1fr;grid-template-rows:auto 1fr;column-gap:72px;row-gap:28px;align-items:start}
+.care-heading{grid-area:heading}.care-body{grid-area:body}
+.care-photo{grid-area:photo;position:relative;align-self:stretch;min-height:540px;border-radius:120px 6px 6px 6px;overflow:hidden}
+.care-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:44% 35%}
+.care-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#34244200 55%,#342442b3);pointer-events:none}
+.care-photo figcaption{position:absolute;left:24px;bottom:22px;z-index:1;color:#fff;font-size:9px;letter-spacing:.18em;font-weight:600;padding:9px 13px;background:#342442a8;border:1px solid #e8bd5466;border-radius:3px}
+.care-section h2{max-width:560px}
+@media(min-width:761px) and (max-width:1050px){.care-grid{column-gap:44px}.care-photo{min-height:480px}}
+@media(max-width:760px){
+  .care-grid{grid-template-areas:'heading' 'photo' 'body';grid-template-columns:1fr;grid-template-rows:none;row-gap:26px}
+  .care-photo{min-height:0;height:300px;border-radius:80px 6px 6px 6px}
+  .care-photo img{object-position:42% 30%}
+  .care-photo figcaption{left:16px;bottom:16px;font-size:8px}
+}
+
+/* Faixa de fotos no fechamento: o que a pessoa quer voltar a fazer. */
+.life-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:min(1320px,calc(100% - 48px));margin:56px auto 0}
+.life-strip figure{position:relative;height:340px;overflow:hidden;border-radius:6px}
+.life-strip figure:first-child{border-top-left-radius:110px}
+.life-strip figure:last-child{border-top-right-radius:110px}
+.life-strip img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.life-strip figure:nth-child(1) img{object-position:48% 30%}
+.life-strip figure:nth-child(2) img{object-position:58% 25%}
+.life-strip figure:nth-child(3) img{object-position:45% 30%}
+.life-strip figure:hover img{transform:scale(1.03)}
+.life-strip figure:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#34244200 60%,#342442a6);pointer-events:none}
+.life-strip figcaption{position:absolute;left:22px;bottom:20px;z-index:1;color:#fff;font:600 11px var(--body);letter-spacing:.2em;display:flex;align-items:center;gap:10px}
+.life-strip figcaption:before{content:'';width:22px;height:1px;background:var(--gold)}
+@media(min-width:761px) and (max-width:1050px){.life-strip figure{height:280px}}
+@media(max-width:760px){
+  .life-strip{grid-template-columns:1fr 1fr;gap:8px;width:calc(100% - 20px);margin-top:40px}
+  .life-strip figure{height:170px}
+  .life-strip figure:first-child{grid-column:1/-1;height:220px;border-top-left-radius:70px}
+  .life-strip figure:last-child{border-top-right-radius:6px;border-bottom-right-radius:50px}
+  .life-strip figcaption{left:14px;bottom:13px;font-size:10px}
+}
+
+/* Botão flutuante do WhatsApp na cor padrão do aplicativo. */
+.whatsapp-float{background:#25d366;color:#fff;border:0;box-shadow:0 8px 22px #0000002e;opacity:1}
+.whatsapp-float:hover{background:#1ebe5b;box-shadow:0 12px 28px #00000038}
+.whatsapp-float:focus-visible{outline:3px solid #128c7e}

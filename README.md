@@ -16,6 +16,10 @@ Landing page estática, em português, com fotos reais, HTML semântico e sem de
 - As fontes DM Sans e Manrope são servidas pelo Google Fonts, com fallback local sans-serif.
 - Depois de definir o domínio definitivo, adicionar canonical e URL absoluta da imagem Open Graph.
 
+## Etapas do atendimento
+
+Em telas a partir de 1024 px de largura e 680 px de altura, a seção "Como é o seu atendimento" fica fixa enquanto a rolagem avança de 01 a 05, com barra dourada e troca de foto. A distância de rolagem (hoje 290vh, cerca de 58% da tela por etapa) é definida em `.tour.is-pinned` (`styles.css`). Abaixo disso, ou com "reduzir movimento" ativo no sistema, as etapas viram cards deslizantes (tablet/mobile) ou grade estática. Fotos em `assets/passo-01.jpg` a `passo-05.jpg`, formato 4:5 (1200×1500). Originais em `novas-fotos/sequencia/`; o recorte é feito pelo `optimize-assets.ps1`.
+
 ## Vídeos verticais
 
 Há três espaços 9:16: apresentação da técnica pela Helena e dois depoimentos. Enquanto `src` estiver vazio, cada área informa que o vídeo está em breve. Coloque os arquivos MP4/WebM em `assets/`, com nomes sem espaços, e preencha `videos` no `site-config.js`. Configure também uma capa, legendas VTT em português e a transcrição. O player usa controles nativos, sem autoplay e sem baixar o vídeo antes da interação (`preload=none`). Use apenas depoimentos reais autorizados; resultados individuais não são promessas.

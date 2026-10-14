@@ -9,9 +9,9 @@ $items = @(
   @('movimentos-detalhes\Movimentos Bowen (1).jpg', 'bowen-maos.jpg', 1100),
   @('movimentos-detalhes\Movimentos Bowen (2).jpg', 'bowen-detalhe.jpg', 1100),
   @('novas-fotos\dor 1.png', 'corpo-dor-ombro.jpg', 1536),
-  @('novas-fotos\academia feliz.png', 'vida-academia.jpg', 1000),
-  @('novas-fotos\bike feliz.png', 'vida-bike.jpg', 1000),
-  @('novas-fotos\corrida feliz.png', 'vida-corrida.jpg', 1000)
+  @('novas-fotos\academia feliz.png', 'vida-academia.jpg', 1536),
+  @('novas-fotos\bike feliz.png', 'vida-bike.jpg', 1536),
+  @('novas-fotos\corrida feliz.png', 'vida-corrida.jpg', 1536)
 )
 # Ajuste de cor: +5% de brilho e +10% de saturação.
 function New-ColorAttributes([double]$brightness = 1.05, [double]$saturation = 1.1) {
